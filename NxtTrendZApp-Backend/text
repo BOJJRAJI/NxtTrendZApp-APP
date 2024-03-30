@@ -1,0 +1,41 @@
+# register 
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username":"Kranthi",
+  "email":"kranthi1@gmail.com",
+  "password":"kranthi1234"
+}
+
+###
+# Login 
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email":"bojjaraji55@gmail.com",
+  "password":"raji55@"
+}
+
+###
+GET http://localhost:5000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJvamphcmFqaTU1QGdtYWlsLmNvbSIsImlhdCI6MTcwMTgzOTk4OX0.lU5967cYJnNpCG7dSYTUYtajV7oI0oEnzS2I6zrBZYY
+
+###
+# getProduct and similar products
+GET http://localhost:5000/products/50
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJvamphcmFqaTU1QGdtYWlsLmNvbSIsImlhdCI6MTcwMTgzOTk4OX0.lU5967cYJnNpCG7dSYTUYtajV7oI0oEnzS2I6zrBZYY
+
+###
+# get primary deals products
+GET http://localhost:5000/prime-deals
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJvamphcmFqaTU1QGdtYWlsLmNvbSIsImlhdCI6MTcwMTgzOTk4OX0.lU5967cYJnNpCG7dSYTUYtajV7oI0oEnzS2I6zrBZYY
+
+###
+GET http://localhost:5000/products?sort_by='PRICE_HIGH'&category=''&title_search=''&rating=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJvamphcmFqaTU1QGdtYWlsLmNvbSIsImlhdCI6MTcwMTgzOTk4OX0.lU5967cYJnNpCG7dSYTUYtajV7oI0oEnzS2I6zrBZYY
+
+
+
