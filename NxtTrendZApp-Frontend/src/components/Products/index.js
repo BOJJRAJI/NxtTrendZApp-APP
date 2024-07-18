@@ -13,6 +13,7 @@ const Products = () => (
       <AllProductsSection />
     </div>
   </>
+  
 )
 
 export default Products
